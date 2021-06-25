@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['lib/code1.py'],
-             pathex=['/Users/kanza/Documents/eeg'],
+             pathex=['/Users/njafri/Documents/myPrograms/ECG_signal_plot'],
              binaries=[],
              datas=[],
              hiddenimports=[],
