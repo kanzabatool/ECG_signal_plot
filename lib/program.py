@@ -3,11 +3,13 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
 import pandas as pd
 import matplotlib
+import os
 matplotlib.use('TkAgg')
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 def load_data():
-    ecg = "../data/data-eeg.csv"
+    ecg = os.path.join(basedir, "data/data-eeg.csv")
     myfile = pd.read_csv(ecg, header=None).values
     data = myfile.tolist()
     return data
